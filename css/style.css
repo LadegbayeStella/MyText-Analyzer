@@ -42,7 +42,7 @@ border-radius: 20px;
   padding: 20px;
   margin: 50px;
   width: 70%;
-  height: 350px;
+  height: 400px;
   display: inline-block;
   background-color: tan;
 }
@@ -87,3 +87,10 @@ border-radius: 20px;
     margin-right:80px;
     margin-left: 200px;
   }
+  /* stell */
+body{
+  background-image: url(../img/b3rc5h8jvvqgpdlh4fgs.gif);
+  background-color: antiquewhite;
+box-shadow: #000;
+
+}
