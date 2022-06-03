@@ -103,10 +103,14 @@ border-radius: 20px;
 
  .stella{
   background: coral;
-  width: 499px;
+  width: 599px;
   height: 1000px;
   line-height: 40px;
   position: relative; 
   top: -1050px;
 bottom: 20px; ;
 }
+/* .container img{
+  position: relative;
+  top: -1050;
+} */
