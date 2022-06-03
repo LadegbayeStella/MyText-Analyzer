@@ -102,40 +102,36 @@ boldPassage(word, text);
 Expected Output: "<p><b>hello</b> there</p>"
 
 
-Describe: firstInstanceOfWord(word , text)
 
-
-Test:"It should return 0 for an empty string"
+Test:"It should mask offensive words in #tag. the words are [ "biffaroni," "loopdalop" "Zionks","muppeteer"];
 code:
-const text = "This is loop"
-firstInstanceOfWord(text);
-Expected Output:["This","Is","loop"]
+const word = stella is biffaroni
+Expected Output:  stella is "####"
 
-Test:"It shold be able to return to print the index of the text on the console"
-code:
-const text = "This is loop"
-firstInstanceOfWord(text);
-Expected Output:0
-         1 
-                2
 
-Test:"It should be able to return the index of the word in the text"
-code:
-const text = "This is loop"
-const word = loop
-firstInstanceOfWord(word,text);
-Expected Output: 2
+<!-- my README -->
 
-Text:"It should return the index regardless of the case"
-code:
-const text = "THIS is loop this"
-const word = "this"
-firstInstanceOfWord(word,text);
-Expected Output:0
+# TEXT ANALYZER
+By Ladegbaye Stella Ewatomi
+A simple website for text Analyzer
 
-Text:"It should return the index regardless of the punctuation"
-code:
-const text = "THIS is loop! this"
-const word = "loop"
-firstInstanceOfWord(word,text);
-Expected Output:2
+## Technologies Used
+* GIT
+* HTML
+* CSS
+* Jquery
+
+## Description
+* This website allows users to input a sentence or word
+  and then count the total of words you inputed
+*  This website bold the specific word you input that it should bold 
+* This number count the nmber of occurences in the text
+* 
+
+## Setup/Installation Requirements
+* Clone this repository to your desktop.
+* Navigate to the top level of the directory.
+* Open index.html on your browser
+
+## Contact Information
+Ladegbayeewatomi50@gmail.com.

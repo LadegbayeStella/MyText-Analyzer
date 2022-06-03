@@ -35,17 +35,17 @@ function wordCounter(text) {
 function maskOffensiveWord(passage) {
   passage = passage.toLowerCase();
   let offensiveArray = ["biffaroni", "loopdaloop", "zoinks", "muppeteer"];
-  let retArray = [];
+  let emptyArray = [];
   let textArray = passage.split(" ");
   textArray.forEach(function (element) {
-    offensiveArray.forEach(function (oElement) {
-      if (element === oElement) {
-        element = "*****";
+    offensiveArray.forEach(function (offensiveElement) {
+      if (element === offensiveElement) {
+        element = "####";
       }
     })
-    retArray.push(element);
+    emptyArray.push(element);
   });
-  return retArray.join(' ');
+  return emptyArray.join(' ');
 }
 
 function wordMatch(wordOne, wordTwo) {
@@ -129,7 +129,7 @@ $(document).ready(function () {
     let sentence1 = $("#text-passage").val();
     let word = $("#word").val();
     let boldedPassage = boldPassage(word, sentence1);
-    let maskedBoldPassage = maskOffensiveWord(boldedPassage)
+    let maskedBoldPassage = maskOffensiveWord(sentence1)
     $("#bolded-passage").html(maskedBoldPassage);
     let topmostWord = topThreeWords(sentence1);
     let topmostWord1 = topmostWord.replace(/\s|[0-9]/g, "");
@@ -142,7 +142,7 @@ $(document).ready(function () {
     let regexd2 = new RegExp(secondWord1 ,"gi");
     let sentence3 = sentence2.replace(regexd2, "");
     let thirdWord = topThreeWords(sentence3);
-    $("#top").html("<br>"+"<li>"+topmostWord + "</li>" + "<br>"+"<li>" + secondWord +  "</li>"  + "<br>"+ "<li>" + thirdWord +  "</li>" );
+    $("#top").html("<br>"+"<li>"+topmostWord + "</li>" + "<br>"+"<li>" + secondWord  + "<br>"+ "<li>" + thirdWord);
     $("#total-count").text(wordCounter(sentence1));
     $("#selected-count").text(numberOfOccurrencesInText(word,sentence1));
    

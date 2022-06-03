@@ -18,7 +18,7 @@ h1{
   margin-right:80px;
     margin-left: 200px;
 }
-body{
+.index{
   background-repeat: no-repeat;
   background-size: cover;
   
@@ -88,9 +88,25 @@ border-radius: 20px;
     margin-left: 200px;
   }
   /* stell */
-body{
-  background-image: url(../img/b3rc5h8jvvqgpdlh4fgs.gif);
-  background-color: antiquewhite;
-box-shadow: #000;
+.stel{
+  background-image: url(../img/IMG_20220529_165936.JPG);
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 62%;
+  background-size: cover;
+  margin-left: 500px;
+  background-position: center;
+  position: relative; 
+  top: -50px;
+}
 
+
+ .stella{
+  background: coral;
+  width: 499px;
+  height: 1000px;
+  line-height: 40px;
+  position: relative; 
+  top: -1050px;
+bottom: 20px; ;
 }
